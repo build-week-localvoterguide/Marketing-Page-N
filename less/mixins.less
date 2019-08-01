@@ -1,0 +1,32 @@
+// Mixins Here
+
+//display
+.disp(){
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+//themes
+.a-style(){
+    text-decoration: none;
+        color:@wh;
+        font-size: 1.2rem;
+}
+
+.button(@back:@b1, @font:@wh){
+    background-color: @back;
+    color:@font;
+    border-radius:4px;
+    padding:5px 15px;
+    width:fit-content;
+    height: 25px;
+
+}
+
+//Mobile
+.center(){
+    display:block;
+    max-width:500px;
+    width:100%;
+}
