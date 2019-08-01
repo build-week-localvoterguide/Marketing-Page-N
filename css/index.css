@@ -173,6 +173,10 @@ button {
   width: fit-content;
   height: 25px;
 }
+button:hover {
+  background-color: #ebf5ff;
+  color: #62b6cb;
+}
 footer {
   position: relative;
   bottom: 0%;
@@ -251,6 +255,10 @@ footer {
 .users {
   height: fit-content;
 }
+.users h3 {
+  text-align: center;
+  margin: 2% auto;
+}
 .voters,
 .candidates {
   display: flex;
@@ -304,11 +312,7 @@ footer {
 }
 .cont form input[type=submit]:hover {
   background-color: #ebf5ff;
-  color: #23406d;
-  border-radius: 4px;
-  padding: 5px 15px;
-  width: fit-content;
-  height: 25px;
+  color: #62b6cb;
 }
 .cont footer {
   background-image: linear-gradient(45deg, #96221f, #23406d);
