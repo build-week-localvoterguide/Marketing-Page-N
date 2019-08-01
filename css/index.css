@@ -146,7 +146,7 @@ h5 {
 }
 h1 {
   font-size: 8rem;
-  font-family: 'Yellowtail', cursive;
+  font-family: 'Fjalla One', sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -154,14 +154,15 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
   padding: 1% 0;
 }
 body {
-  width: 96%;
-  max-width: 800px;
   margin: auto;
 }
 button {
@@ -170,7 +171,12 @@ button {
   border-radius: 4px;
   padding: 5px 15px;
   width: fit-content;
-  height: fit-content;
+  height: 25px;
+}
+footer {
+  position: relative;
+  bottom: 0%;
+  width: 100%;
 }
 .nav {
   width: 100%;
@@ -179,6 +185,11 @@ button {
   margin: auto;
   padding: 2% 0;
   height: fit-content;
+  background-color: white;
+  opacity: 0.7;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 .nav img {
   width: auto;
@@ -196,20 +207,91 @@ button {
   color: #62b6cb;
   font-size: 1.2rem;
 }
+.top {
+  width: 100%;
+  height: 500px;
+  color: white;
+  background-image: linear-gradient(45deg, red, blue);
+  text-align: center;
+  padding: 200px 0;
+}
 .top img {
   width: 100%;
   height: auto;
   opacity: 0.8;
+  margin: 2% 0;
 }
-.top h1 {
-  position: absolute;
-  top: 300px;
-  width: fit-content;
-  left: 100px;
-  color: white;
+.about,
+.users {
+  margin: 2% auto;
+  padding: 20px;
+  border-width: 2px;
+  border-style: solid;
+  height: 500px;
+  width: 96%;
+  border-image: linear-gradient(to bottom, red, blue) 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.users {
+  height: fit-content;
+}
+.voters,
+.candidates {
+  display: flex;
+  justify-content: space-evenly;
+}
+.person {
+  width: 40%;
+}
+.person img {
+  max-width: 200px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
 }
 footer {
   background-color: #62b6cb;
   text-align: center;
   color: white;
+}
+.hp footer {
+  position: relative;
+  bottom: end;
+}
+.cont {
+  background-image: linear-gradient(45deg, red, blue);
+}
+form {
+  width: 96%;
+  margin: 20px auto;
+}
+form input[type=text],
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+form input[type=submit] {
+  background-color: #62b6cb;
+  color: #ebf5ff;
+  border-radius: 4px;
+  padding: 5px 15px;
+  width: fit-content;
+  height: 25px;
+}
+form input[type=submit]:hover {
+  background-color: #ebf5ff;
+  color: #124d87;
+  border-radius: 4px;
+  padding: 5px 15px;
+  width: fit-content;
+  height: 25px;
 }
