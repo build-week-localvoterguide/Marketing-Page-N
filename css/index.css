@@ -189,10 +189,14 @@ footer {
   overflow: hidden;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 .nav img {
   width: auto;
   height: 40px;
+  float: left;
+  display: block;
+  text-align: center;
 }
 .nav nav {
   width: 100%;
@@ -205,6 +209,8 @@ footer {
   text-decoration: none;
   color: #ebf5ff;
   font-size: 1.2rem;
+  float: left;
+  display: block;
 }
 .top header {
   display: flex;
@@ -227,7 +233,6 @@ footer {
 .top img {
   width: 100%;
   height: auto;
-  opacity: 0.8;
   margin: 2% 0;
 }
 .about,
@@ -310,4 +315,20 @@ footer {
 }
 .abt header {
   justify-content: center;
+}
+.abt .text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 400px;
+  text-align: center;
+  justify-content: flex-start;
+  margin: 10%;
+  width: 80%;
+  padding: 5%;
+  opacity: 0.8;
+  background-color: white;
+  position: absolute;
+  top: 55%;
 }
