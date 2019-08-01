@@ -3,18 +3,57 @@
         width: 100%;
         height: auto;
         opacity: .8;
+        margin: 2% 0;
     }
-    h1{
-        position:absolute;
-        top: 300px;
-        width:fit-content;
-        left:100px;
+    
+        // position:absolute;
+        // top: 300px;
+        width:100%;
+        height: 500px;
+        // left:100px;
         color:white;
+        background-image: linear-gradient(45deg, red, blue);
+        text-align: center;
+        padding:200px 0;
+}
+
+.about, .users{
+    margin: 2% auto;
+    padding: 20px;
+    border-width: 2px;
+    border-style: solid;
+    height:500px;
+    width:96%;
+    border-image: linear-gradient(to bottom,red,blue) 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.users{
+    height: fit-content;
+}
+.voters, .candidates{
+    display:flex;
+    justify-content:space-evenly;
+}
+.person 
+{
+    img{
+    max-width: 200px;
+    max-height: 400px;
+    width:auto;
+    height:auto;
     }
+    width:40%;
 }
 
 footer{
     background-color: @b1;
     text-align: center;
     color:white;
+}
+
+.hp footer{
+    position:relative;
+    bottom:end;
 }
