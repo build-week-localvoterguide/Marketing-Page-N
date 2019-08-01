@@ -141,7 +141,7 @@ h3,
 h4,
 h5 {
   font-family: 'Fjalla One', sans-serif;
-  color: #124d87;
+  color: #23406d;
   padding: 1% 0;
 }
 h1 {
@@ -183,10 +183,9 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 2% 0;
+  padding: 1% 2%;
   height: fit-content;
-  background-color: white;
-  opacity: 0.7;
+  background-image: linear-gradient(45deg, #62b6cb, #f7646c);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -204,16 +203,26 @@ footer {
 }
 .nav a {
   text-decoration: none;
-  color: #62b6cb;
+  color: #ebf5ff;
   font-size: 1.2rem;
 }
-.top {
+.top header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 500px;
   color: white;
-  background-image: linear-gradient(45deg, red, blue);
+  background-image: linear-gradient(45deg, #96221f, #23406d);
   text-align: center;
   padding: 200px 0;
+}
+.top header h2 {
+  color: #ebf5ff;
+}
+.top header img {
+  height: 400%;
+  width: auto;
 }
 .top img {
   width: 100%;
@@ -229,7 +238,7 @@ footer {
   border-style: solid;
   height: 500px;
   width: 96%;
-  border-image: linear-gradient(to bottom, red, blue) 1 100%;
+  border-image: linear-gradient(to bottom, #96221f, #23406d) 1 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -255,21 +264,22 @@ footer {
   background-color: #62b6cb;
   text-align: center;
   color: white;
-}
-.hp footer {
   position: relative;
   bottom: end;
 }
 .cont {
-  background-image: linear-gradient(45deg, red, blue);
+  background-image: linear-gradient(45deg, #f7646c, #62b6cb);
 }
-form {
+.cont header {
+  justify-content: center;
+}
+.cont form {
   width: 96%;
   margin: 20px auto;
 }
-form input[type=text],
-form select,
-form textarea {
+.cont form input[type=text],
+.cont form select,
+.cont form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid black;
@@ -279,7 +289,7 @@ form textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-form input[type=submit] {
+.cont form input[type=submit] {
   background-color: #62b6cb;
   color: #ebf5ff;
   border-radius: 4px;
@@ -287,11 +297,17 @@ form input[type=submit] {
   width: fit-content;
   height: 25px;
 }
-form input[type=submit]:hover {
+.cont form input[type=submit]:hover {
   background-color: #ebf5ff;
-  color: #124d87;
+  color: #23406d;
   border-radius: 4px;
   padding: 5px 15px;
   width: fit-content;
   height: 25px;
+}
+.cont footer {
+  background-image: linear-gradient(45deg, #96221f, #23406d);
+}
+.abt header {
+  justify-content: center;
 }
