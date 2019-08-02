@@ -173,6 +173,10 @@ button {
   width: fit-content;
   height: 25px;
 }
+button:hover {
+  background-color: #ebf5ff;
+  color: #62b6cb;
+}
 footer {
   position: relative;
   bottom: 0%;
@@ -189,10 +193,19 @@ footer {
   overflow: hidden;
   position: fixed;
   top: 0;
+  z-index: 1;
+}
+.nav FORM {
+  display: none;
+  background-color: white;
+  opacity: 0.8;
 }
 .nav img {
   width: auto;
   height: 40px;
+  float: left;
+  display: block;
+  text-align: center;
 }
 .nav nav {
   width: 100%;
@@ -205,6 +218,22 @@ footer {
   text-decoration: none;
   color: #ebf5ff;
   font-size: 1.2rem;
+  float: left;
+  display: block;
+}
+@media (max-width: 500px) {
+  .nav a {
+    display: none;
+  }
+  .nav FORM {
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+  }
+  .nav button {
+    position: absolute;
+    left: 33%;
+  }
 }
 .top header {
   display: flex;
@@ -217,17 +246,31 @@ footer {
   text-align: center;
   padding: 200px 0;
 }
-.top header h2 {
+@media (max-width: 500px) {
+  .top header {
+    padding-top: 50%;
+  }
+}
+.top header a {
   color: #ebf5ff;
+  font-size: 3.2rem;
+  text-decoration: none;
+}
+.top header a:hover {
+  color: #f7646c;
 }
 .top header img {
   height: 400%;
   width: auto;
 }
+@media (max-width: 500px) {
+  .top header img {
+    display: none;
+  }
+}
 .top img {
   width: 100%;
   height: auto;
-  opacity: 0.8;
   margin: 2% 0;
 }
 .about,
@@ -246,15 +289,52 @@ footer {
 .users {
   height: fit-content;
 }
+@media (max-width: 500px) {
+  .users h2 {
+    padding: 0 0 30px 0;
+    text-align: center;
+  }
+}
+.users h3 {
+  text-align: center;
+  margin: 2% auto;
+}
+@media (max-width: 500px) {
+  .users h4 {
+    padding: 30px 0;
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .users p {
+    padding: 30px 0;
+    max-width: 300px;
+    width: 200%;
+  }
+}
+@media (max-width: 500px) {
+  .users {
+    padding: 30px;
+  }
+}
 .voters,
 .candidates {
   display: flex;
   justify-content: space-evenly;
 }
-.person {
+@media (max-width: 500px) {
+  .voters,
+  .candidates {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.voters .person,
+.candidates .person {
   width: 40%;
 }
-.person img {
+.voters .person img,
+.candidates .person img {
   max-width: 200px;
   max-height: 400px;
   width: auto;
@@ -273,13 +353,13 @@ footer {
 .cont header {
   justify-content: center;
 }
-.cont form {
+.cont .submit {
   width: 96%;
   margin: 20px auto;
 }
-.cont form input[type=text],
-.cont form select,
-.cont form textarea {
+.cont .submit input[type=text],
+.cont .submit select,
+.cont .submit textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid black;
@@ -289,7 +369,7 @@ footer {
   margin-bottom: 16px;
   resize: vertical;
 }
-.cont form input[type=submit] {
+.cont .submit input[type=submit] {
   background-color: #62b6cb;
   color: #ebf5ff;
   border-radius: 4px;
@@ -297,17 +377,29 @@ footer {
   width: fit-content;
   height: 25px;
 }
-.cont form input[type=submit]:hover {
+.cont .submit input[type=submit]:hover {
   background-color: #ebf5ff;
-  color: #23406d;
-  border-radius: 4px;
-  padding: 5px 15px;
-  width: fit-content;
-  height: 25px;
+  color: #62b6cb;
 }
 .cont footer {
   background-image: linear-gradient(45deg, #96221f, #23406d);
 }
 .abt header {
   justify-content: center;
+}
+.abt .text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 400px;
+  text-align: center;
+  justify-content: flex-start;
+  margin: 10%;
+  width: 80%;
+  padding: 5%;
+  opacity: 0.8;
+  background-color: white;
+  position: absolute;
+  top: 55%;
 }

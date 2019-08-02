@@ -6,17 +6,23 @@
     height: fit-content;
     background-image: linear-gradient(45deg, @b1, @r2);
 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
-        overflow: hidden;
-        position: fixed;
-        top: 0;
+    FORM{
+        display:none;
+        background-color:white;
+        opacity:.8;
+    }
 
     img{
         width:auto;
         height: 40px;
-        // float: left;
-        // display: block;
-        // text-align: center;
+        float: left;
+        display: block;
+        text-align: center;
     }
     nav{
         .disp();
@@ -25,7 +31,19 @@
     }
     a{
         .a-style();
-            // float: left;
-            // display: block;
+            float: left;
+            display: block;
     }
+
+    @media @phone{
+        a {display: none;}
+        FORM {display: inline-block;
+        position: absolute;
+        right:2%;}
+        button{
+            position:absolute;
+            left:33%;
+        }
+    }
+
 }
