@@ -11,6 +11,12 @@
     top: 0;
     z-index: 1;
 
+    FORM{
+        display:none;
+        background-color:white;
+        opacity:.8;
+    }
+
     img{
         width:auto;
         height: 40px;
@@ -28,4 +34,16 @@
             float: left;
             display: block;
     }
+
+    @media @phone{
+        a {display: none;}
+        FORM {display: inline-block;
+        position: absolute;
+        right:2%;}
+        button{
+            position:absolute;
+            left:33%;
+        }
+    }
+
 }
