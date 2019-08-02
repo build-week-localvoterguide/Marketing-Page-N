@@ -256,6 +256,9 @@ footer {
   font-size: 3.2rem;
   text-decoration: none;
 }
+.top header a:hover {
+  color: #f7646c;
+}
 .top header img {
   height: 400%;
   width: auto;
